@@ -35,7 +35,7 @@ then
   dir=`ls $3`
   for eachfile in $dir;
   do
-     jinja2 --strict $eachfile $2 --format json > "${eachfile}_"
+     jinja2 --strict $eachfile $2 --format yaml > "${eachfile}_"
      echo $eachfile
   done
 
